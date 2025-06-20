@@ -1,16 +1,32 @@
 #include <stdio.h>
 #include <string.h>
+#include "bio_terms.h" // Included the extended dictionary
 
 void defineTerm(char term[]) {
-    if (strcmp(term, "cell") == 0) {
+     if (strcmp(term, "cell") == 0) {
         printf("Definition: The cell is the basic unit of life in all living organisms.\n");
     } else if (strcmp(term, "photosynthesis") == 0) {
         printf("Definition: Photosynthesis is the process by which green plants make their own food using sunlight.\n");
     } else if (strcmp(term, "mitosis") == 0) {
         printf("Definition: Mitosis is the process by which a cell divides into two identical daughter cells.\n");
+    } else if (strcmp(term, "dna") == 0) {
+        printf("Definition: DNA (Deoxyribonucleic Acid) contains the genetic instructions for the development of living things.\n");
+    } else if (strcmp(term, "osmosis") == 0) {
+        printf("Definition: Osmosis is the movement of water molecules through a semi-permeable membrane from high to low concentration.\n");
+    } else if (strcmp(term, "enzyme") == 0) {
+        printf("Definition: An enzyme is a protein that speeds up chemical reactions in the body.\n");
+    } else if (strcmp(term, "ecosystem") == 0) {
+        printf("Definition: An ecosystem is a community of interacting organisms and their physical environment.\n");
+    } else if (strcmp(term, "homeostasis") == 0) {
+        printf("Definition: Homeostasis is the ability of an organism to maintain internal stability.\n");
+    } else if (strcmp(term, "bacteria") == 0) {
+        printf("Definition: Bacteria are single-celled organisms that can be found in a variety of environments.\n");
+    } else if (strcmp(term, "virus") == 0) {
+        printf("Definition: A virus is a microscopic infectious agent that replicates only inside the living cells of an organism.\n");
     } else {
         printf("Sorry, I don't have the definition for that term yet.\n");
     }
+    
 }
 
 void biologyQuiz() {
